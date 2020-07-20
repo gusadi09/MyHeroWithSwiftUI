@@ -13,6 +13,11 @@
 		F15F839024AE2413009D1F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15F838F24AE2413009D1F16 /* Assets.xcassets */; };
 		F15F839324AE2413009D1F16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15F839224AE2413009D1F16 /* Preview Assets.xcassets */; };
 		F15F839624AE2413009D1F16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15F839424AE2413009D1F16 /* LaunchScreen.storyboard */; };
+		F15F839E24AE2493009D1F16 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F839D24AE2493009D1F16 /* Hero.swift */; };
+		F15F83A024AE24D8009D1F16 /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F839F24AE24D8009D1F16 /* DummyHeroes.swift */; };
+		F15F83A524AE25F0009D1F16 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F83A424AE25F0009D1F16 /* HeroDetail.swift */; };
+		F15F83A724AE2600009D1F16 /* HeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F83A624AE2600009D1F16 /* HeroList.swift */; };
+		F15F83A924AE260D009D1F16 /* HeroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F83A824AE260D009D1F16 /* HeroRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F15F839224AE2413009D1F16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F15F839524AE2413009D1F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F15F839724AE2413009D1F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15F839D24AE2493009D1F16 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		F15F839F24AE24D8009D1F16 /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		F15F83A424AE25F0009D1F16 /* HeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
+		F15F83A624AE2600009D1F16 /* HeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroList.swift; sourceTree = "<group>"; };
+		F15F83A824AE260D009D1F16 /* HeroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,9 @@
 		F15F838824AE2412009D1F16 /* MyHeroWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F15F838924AE2412009D1F16 /* AppDelegate.swift */,
-				F15F838B24AE2412009D1F16 /* SceneDelegate.swift */,
-				F15F838D24AE2412009D1F16 /* ContentView.swift */,
+				F15F83A124AE255B009D1F16 /* Base */,
+				F15F83A324AE2581009D1F16 /* Model */,
+				F15F83A224AE2570009D1F16 /* View */,
 				F15F838F24AE2413009D1F16 /* Assets.xcassets */,
 				F15F839424AE2413009D1F16 /* LaunchScreen.storyboard */,
 				F15F839724AE2413009D1F16 /* Info.plist */,
@@ -73,6 +83,35 @@
 				F15F839224AE2413009D1F16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F15F83A124AE255B009D1F16 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F15F838924AE2412009D1F16 /* AppDelegate.swift */,
+				F15F838B24AE2412009D1F16 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F15F83A224AE2570009D1F16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F15F838D24AE2412009D1F16 /* ContentView.swift */,
+				F15F83A424AE25F0009D1F16 /* HeroDetail.swift */,
+				F15F83A624AE2600009D1F16 /* HeroList.swift */,
+				F15F83A824AE260D009D1F16 /* HeroRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F15F83A324AE2581009D1F16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F15F839D24AE2493009D1F16 /* Hero.swift */,
+				F15F839F24AE24D8009D1F16 /* DummyHeroes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +187,12 @@
 			files = (
 				F15F838A24AE2412009D1F16 /* AppDelegate.swift in Sources */,
 				F15F838C24AE2412009D1F16 /* SceneDelegate.swift in Sources */,
+				F15F83A524AE25F0009D1F16 /* HeroDetail.swift in Sources */,
+				F15F83A024AE24D8009D1F16 /* DummyHeroes.swift in Sources */,
+				F15F83A724AE2600009D1F16 /* HeroList.swift in Sources */,
 				F15F838E24AE2412009D1F16 /* ContentView.swift in Sources */,
+				F15F83A924AE260D009D1F16 /* HeroRow.swift in Sources */,
+				F15F839E24AE2493009D1F16 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
